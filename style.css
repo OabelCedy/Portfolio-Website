@@ -1,0 +1,217 @@
+/* Global Styles */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("sea.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 180%;
+}
+
+/* Header Styles */
+header {
+  background-color: grayscale;
+  color: #756d6d;
+  padding: 0px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav li {
+  margin: 0 30px;
+  margin-left: 50px;
+  position: relative;
+}
+
+header nav li::before {
+  content: "■ ";
+  color: black;
+  font-weight: bold;
+}
+
+header nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid red;
+}
+
+header nav a:hover {
+  color: green;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 30px;
+  margin-left: 50px;
+  position: relative;
+}
+
+nav li::before {
+  content: "■ ";
+  color: black;
+  font-weight: bold;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid red;
+}
+
+nav a:hover {
+  color: green;
+}
+
+/* About Section Styles */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.about-image {
+  flex: 1;
+  text-align: right;
+}
+
+.oval-image {
+  width: 400px;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 100px / 150px;
+}
+
+/* Expertise Section Styles */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  padding: 60px;
+  margin-top: 50px;
+}
+
+.expertise-item {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.expertise-item h3 {
+  margin-top: 0;
+}
+
+/* Rock-Paper-Scissors, Calculator, and Online Resume Sections */
+#rock-paper-scissors,
+#calculator,
+#online-resume {
+  background-color: transparent;
+  padding: 40x;
+  text-align: center;
+}
+
+/* Clients Section Styles */
+#clients {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Contact Section Styles */
+#contact {
+  padding: 110px;
+  text-align: center;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .about-image {
+    text-align: center;
+  }
+
+  .oval-image {
+    width: 300px;
+    height: 230px;
+  }
+}
